@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space - Canvas Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game_over" style="display: none">
+        <p class="p">Ai pierdut!</p>
+        <a href="#"  onclick="game_over_click()"><p class="option">Restart</p></a>
+        <a href="#"  onclick="go_to_menu_click()"><p class="option">Meniu principal</p></a>
+    </div>
+
+    <div id="win" style="display: none">
+        <p class="p">Ai castigat!</p>
+        <p id="surv" style="color:#fff; font-size:20px;">Ai terminat nivelul în:</p>
+        <p style="color:#fff; font-size:20px;"><label id="sec">00</label> secunde.</p>
+        <a href="#"  onclick="go_to_menu_click()"><p class="option">Meniu principal</p></a>
+    </div>
+    
+    <div id="background_menu">
+        <div id="menu">
+            <p class="p">Space</p>
+            <a href="#"  onclick="start_game_click()"><p class="option">Start joc</p></a>
+            <a href="#"  onclick="help()"><p class="option">Instrucțiuni</p></a>
+        </div>
+    </div>
+
+    <div id="background_help" style="display: none;">
+        <div id="help_menu">
+            <p class="p">Instrucțiuni</p>
+            <img style="margin-top:-15px;" src="img/help.png">
+            <a href="#"  onclick="go_to_menu_click()"><p class="option">Meniu principal</p></a>
+            
+        </div>
+    </div>
+    
+    <canvas></canvas>
+
+    <script src="js/main.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/obstacle.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/enemy_r.js"></script>
+    <script src="js/bullet.js"></script>
+    <script src="js/space.js"></script>
+    <script src="js/menu_functions.js"></script>
+</body>
+</html>

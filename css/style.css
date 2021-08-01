@@ -1,0 +1,50 @@
+body{
+    background: #314E52;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+#game_over, #win{
+    position: absolute;
+    border-radius: 25px;
+    border: 2px solid #FFF;
+    background: #2978B5;
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.3);
+    text-align: center;
+
+}
+
+#menu, #help_menu, #rank_menu{
+    position: absolute;
+    border-radius: 25px;
+    border: 2px solid #FFF;
+    background: #2978B5;
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.p{
+    font-size: 35px;
+    color: #FFF;
+    margin: 50px;
+   
+}
+
+a{
+    text-decoration: none;
+}
+.option{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    color: #FFF;
+    border-radius: 25px;
+    border: 2px solid #FFF;
+    background: #0A043C;
+    width: 250px;
+    margin: 10px 45px;
+
+}
+
+
